@@ -13,4 +13,12 @@ public class GradleManagerTest {
         assertThat(sum).isEqualTo(BigInteger.TWO);
         
     }
+
+    @Test
+    void shouldSubtract() {
+        var manager = new GradleManager();
+        var sum = manager.subtract(BigInteger.TWO, BigInteger.ONE);
+        assertThat(sum).isEqualTo(BigInteger.ONE);
+
+    }
 }
